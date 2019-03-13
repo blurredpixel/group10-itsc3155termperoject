@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @setting.category %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @setting.color %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @setting.username %>
+</p>
+
+<%= link_to 'Edit', edit_setting_path(@setting) %> |
+<%= link_to 'Back', settings_path %>
