@@ -1,14 +1,14 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  noteid: 
+  noteid: 1
   notetitle: MyString
   username: MyString
   category: MyString
   color: MyString
 
 two:
-  noteid: 
+  noteid: 1
   notetitle: MyString
   username: MyString
   category: MyString
