@@ -881,3 +881,41 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/register/create" for 192.168.191.216 at 2019-03-25 21:57:29 +0000
+Cannot render console from 192.168.191.216! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegisterController#create as HTML
+  Rendering register/create.html.erb within layouts/application
+  Rendered register/create.html.erb within layouts/application (59.8ms)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for nil:NilClass):
+    1: <h1>Register New User</h1>
+    2: 
+    3: 
+    4: <%= simple_form_for @user do |f| %>
+    5:   <%= f.input :username %>
+    6:   <%= f.input :password %>
+    7:   <%= f.button :submit %>
+  
+app/views/register/create.html.erb:4:in `_app_views_register_create_html_erb___4350640305123933586_69858720922260'
+Started GET "/register/create" for 192.168.191.216 at 2019-03-25 21:57:49 +0000
+Cannot render console from 192.168.191.216! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegisterController#create as HTML
+  Rendering register/create.html.erb within layouts/application
+  Rendered register/create.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for nil:NilClass):
+    1: <h1>Register New User</h1>
+    2: 
+    3: 
+    4: <%= simple_form_for @User do |f| %>
+    5:   <%= f.input :username %>
+    6:   <%= f.input :password %>
+    7:   <%= f.button :submit %>
+  
+app/views/register/create.html.erb:4:in `_app_views_register_create_html_erb__260671851286476637_69979853049800'

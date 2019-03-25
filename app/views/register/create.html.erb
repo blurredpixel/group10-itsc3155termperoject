@@ -1,2 +1,8 @@
-<h1>Register#create</h1>
-<p>Find me in app/views/register/create.html.erb</p>
+<h1>Register New User</h1>
+
+
+<%= simple_form_for @User do |f| %>
+  <%= f.input :username %>
+  <%= f.input :password %>
+  <%= f.button :submit %>
+<% end %>
