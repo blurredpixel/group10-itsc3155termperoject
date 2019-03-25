@@ -570,6 +570,16 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /root/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /root/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /root/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /root/.rbenv/versions/2.5.1/bin/rake:23
+=======
 Started GET "/" for 152.15.113.4 at 2019-03-25 20:29:53 +0000
 Cannot render console from 152.15.113.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -723,6 +733,7 @@ Migrating to CreateNotes (20190313222253)
   ↳ bin/rails:9
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+<<<<<<< HEAD
 Started GET "/" for 152.15.113.4 at 2019-03-25 20:35:14 +0000
 Cannot render console from 152.15.113.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by Rails::WelcomeController#index as HTML
@@ -795,3 +806,6 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
 
 
+=======
+>>>>>>> ee416918791fd0064eaa857c270a206fbb53ac46
+>>>>>>> 7e507c85e8af70e9511d79729c06690c87a9ca31
