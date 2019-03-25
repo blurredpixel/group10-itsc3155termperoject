@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  get 'register/create'
   get 'home/index'
   
   # root 'home/#index'
