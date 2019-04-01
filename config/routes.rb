@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   
   # get 'welcome/home'
-  get 'users/#index'
+  
   # get 'pages/index'
   root 'pages#index'
-  
+  get 'users/index'
   
   resources :settings
   resources :notes
