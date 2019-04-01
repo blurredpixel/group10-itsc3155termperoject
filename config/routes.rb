@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  
+  root 'welcome/#home'
+  get 'welcome/home'
   get 'register/create'
-  get 'home/index'
+  # get 'home/index'
   
-  # root 'home/#index'
+  
   
   resources :settings
   resources :notes
