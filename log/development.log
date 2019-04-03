@@ -5317,3 +5317,209 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-04-03 17:11:24 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 331ms (Views: 323.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/%E2%80%AA%E2%80%AA/images/RPI.jpg" for 127.0.0.1 at 2019-04-03 17:11:24 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/%E2%80%AA%E2%80%AA/images/RPI.jpg"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/index" for 127.0.0.1 at 2019-04-03 17:58:07 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (28.2ms)
+Completed 200 OK in 414ms (Views: 366.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-04-03 17:58:10 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (181.3ms)
+  Rendered users/new.html.erb within layouts/application (183.1ms)
+Completed 500 Internal Server Error in 194ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `password' for #<ActionView::Helpers::FormBuilder:0x00007f7db0024998>
+Did you mean?  password_field):
+    23: 
+    24:   <div class="field">
+    25:     <%= form.label :password %>
+    26:     <%= form.password :password %>
+    27:   </div>
+    28: 
+    29:   <div class="field">
+  
+app/views/users/_form.html.erb:26:in `block in _app_views_users__form_html_erb__1487632413286430430_70088900256320'
+app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb__1487632413286430430_70088900256320'
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___411499000446585646_70088900234600'
+Started GET "/users/new" for 127.0.0.1 at 2019-04-03 17:58:41 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (21.0ms)
+  Rendered users/new.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 512ms (Views: 425.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/register/index" for 127.0.0.1 at 2019-04-03 18:00:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/register/index"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/register/create" for 127.0.0.1 at 2019-04-03 18:00:25 -0400
+Processing by RegisterController#create as HTML
+Completed 400 Bad Request in 62ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/register_controller.rb:21:in `user_params'
+app/controllers/register_controller.rb:4:in `create'
+Started GET "/register/index" for 127.0.0.1 at 2019-04-03 18:01:18 -0400
+Processing by RegisterController#index as HTML
+  Rendering register/index.html.erb within layouts/application
+  Rendered register/index.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 432ms (Views: 421.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/register/index" for 127.0.0.1 at 2019-04-03 18:01:25 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/register/index"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/register/index" for 127.0.0.1 at 2019-04-03 18:02:22 -0400
+Processing by RegisterController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tlreHpSAT5NfRhjxSV3LGR2W/p7XzxJjzBGCzKLQcbE1zGjkkHQJTkQgSKlT9/LMe8ObVs0xfqPfxTSN6d3+sg==", "user"=>{"username"=>"test3", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  Rendering register/index.html.erb within layouts/application
+  Rendered register/index.html.erb within layouts/application (44.3ms)
+Completed 200 OK in 454ms (Views: 440.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2019-04-03 18:02:33 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 188ms (Views: 147.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2019-04-03 18:04:55 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 442ms (Views: 381.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/register/index" for 127.0.0.1 at 2019-04-03 18:05:02 -0400
+Processing by RegisterController#index as HTML
+  Rendering register/index.html.erb within layouts/application
+  Rendered register/index.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 117ms (Views: 114.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/register/index" for 127.0.0.1 at 2019-04-03 18:05:08 -0400
+Processing by RegisterController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kC/IMBEzCnn/7saMthtdP6dRY00R5DpYH3ZfrWM7v28TuX7KFcdMpOSIltSssWTqwQQGhQsaVpgMounsKDYwbA==", "user"=>{"username"=>"test3", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  Rendering register/index.html.erb within layouts/application
+  Rendered register/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 113ms (Views: 110.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2019-04-03 18:05:20 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 96ms (Views: 92.2ms | ActiveRecord: 0.4ms)
+
+
