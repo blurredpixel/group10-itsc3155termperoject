@@ -1,0 +1,65 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="Notes_Landing_Style.css" />
+      <title>
+         To-do List
+      </title>
+   </head>
+<h1>Plan.It</h1>
+
+
+<picture1>
+<img src="/images/Resize_Plan_It.jpg" alt="Plan_It" width="40" height="60">
+</picture1>
+<div class="topnav">
+  <a href="#home">Home</a>
+  <a href="#notes" class="active">Notes</a>
+  <a href="#about">About Us</a>
+  <a href="#login">Login</a>
+</div>
+
+<body>  
+<div class="row">
+   <div class="column">
+		<div class="body">
+		  <input id="input" placeholder="Tasks">
+		  <ul id="list"></ul>
+		</div>
+   </div>
+</div>  
+<button onclick="myFunction()" class="button" style="top:95px;left:400px">Add a New List</button>
+
+<script>
+//____To-DO List____
+	function newItem() {
+	  var item = document.getElementById("input").value;
+	  var ul = document.getElementById("list");
+	  var li = document.createElement("li");
+	  li.appendChild(document.createTextNode("- " + item));
+	  ul.appendChild(li);
+	  document.getElementById("input").value = "";
+	  li.onclick = removeItem;
+	}
+
+	document.body.onkeyup = function(e) {
+	  if (e.keyCode == 13) {
+		newItem();
+	  }
+	};
+
+	function removeItem(e) {
+	  e.target.parentElement.removeChild(e.target);
+	}
+	
+//____Columns____
+//cloning the column
+function myFunction() {
+  var elmnt = document.getElementsByTagName("DIV")[1];
+  var cln = elmnt.cloneNode(true);
+  document.body.appendChild(cln);
+}	
+</script>
+</body>
+ </html>
