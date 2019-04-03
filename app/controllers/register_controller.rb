@@ -1,7 +1,7 @@
 class RegisterController < ApplicationController
   def create
     
-    @user=User.new(user_params)
+    @user=User.create(user_params)
     
     # if @user.save
     #   redirect_to @note
@@ -18,11 +18,13 @@ class RegisterController < ApplicationController
   end
   def index
   end
-  
+  def new
+  @user=User.new
+  end
   
 
 end
 private
     def user_params
-        params.require(:user).permit(:username, :password)
+      params.require(:user).permit(:username, :datecreated, :password, :phonenumber)
     end
