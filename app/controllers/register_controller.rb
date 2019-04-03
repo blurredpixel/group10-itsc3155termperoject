@@ -1,14 +1,14 @@
 class RegisterController < ApplicationController
   def create
     
-    @user=User.new(user_params)
+    # @user=User.new(user_params)
     
-    if @user.save
-      redirect_to @note
-    end
+    # if @user.save
+    #   redirect_to @note
+    # end
     
     
-    render '/register/create'
+    # render '/register/create'
   end
   def index
   end

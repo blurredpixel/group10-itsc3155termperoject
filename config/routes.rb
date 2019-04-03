@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   
   # get 'welcome/home'
-  
+  get 'register/create'
   # get 'pages/index'
   root 'pages#index'
   get 'users/index'
