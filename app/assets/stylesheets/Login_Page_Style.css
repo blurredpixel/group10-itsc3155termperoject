@@ -1,0 +1,225 @@
+
+h1 {
+  font-size: 20px;
+  font-family: 'Merienda', cursive;
+  position: fixed;
+  top: 40px; 
+  left: 160px;
+  color: Black;
+}
+
+picture1 {
+  position: fixed;
+  top: 35px;
+  left: 115px;
+}
+
+.button {
+  position: absolute;
+  left: 270px;
+  top: 450px;
+  border-radius: 4px;
+  background-color: #605DEC;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  padding: 6px;
+  width: 140px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  position: absolute;
+  top: 260px;
+  left: 280px;
+  color: Black;
+}
+
+h3 {
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  position: absolute;
+  top: 315px; 
+  left: 280px;
+  color: #605DEC;
+}
+.topnav {
+  overflow: hidden;
+  position: absolute;
+  left: 900px;
+  top: 40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 40px;
+  text-decoration: none;
+}
+
+.topnav a:hover:not(.active) {
+  background-color: #77E2F4;
+}
+
+.topnav .active {
+  background-color: #77E2F4;
+}
+/*------------------------------------------*/
+/* Full-width input fields */
+input[type=text] {
+  width: 100%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=password] {
+  width: 100%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.uname {
+  float: right;
+  padding-top: 10px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 10px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 900;
+  top: 120;
+  width: 30%; /* Full width */
+  height: 50%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+------------------------------
