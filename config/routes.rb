@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # get 'pages/index'
   root 'pages#index'
   get 'users/index'
+  get 'pages/index'
   get 'pages/edit_sticky'
   
   resources :settings

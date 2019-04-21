@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-  <link rel="stylesheet" href="edit_sticky_Style.css" />
-    <title>
-       Edit Sticky
-    </title>
+  <%-# font for the h1 tag -%>
+  <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Merienda" %>
+  
+  <%-# font for the sticky note content -%>    
+  <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Indie+Flower" %>
+  
+  <%-# link the CSS stylesheet to the page -%>
+  <%= stylesheet_link_tag "/edit_sticky_Style.css" %>
 </head>
 
 <h1>Plan.It</h1>
 
 
 <picture1>
-<img src="/images/Resize_Plan_It.jpg" alt="Plan_It" width="40" height="60">
+<%= image_tag("/images/RRR.jpg", :alt => "Plan.It", :height => "60", :width=> "40") %>
 </picture1>
 
 <div class="topnav">

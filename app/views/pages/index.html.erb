@@ -1,18 +1,23 @@
 <html>
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<%-# font for the h1 tag -%>
+    <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Merienda" %>
+	
+	<%-# the page font and button font -%>
+	<%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Quicksand" %>
+	
+	<%-# link the CSS stylesheet to the page -%>
 	<%= stylesheet_link_tag "/Main_Page_Style.css" %>
 </head>
     
 <h1>Plan.It</h1>
 
 <picture1>
-    <%= image_tag("/images/RRR.jpg", :alt => "Plan.It", :height => "60", :width=> "40") %>
+<%= image_tag("/images/RRR.jpg", :alt => "Plan.It", :height => "60", :width=> "40") %>
 </picture1>
 
 <ul>
-  <li><a class="active" href="/pages/index">Home</a></li>
+  <li><a href="/pages/index" class="active">Home</a></li>
   <li><a href="/pages/edit_sticky">Notes</a></li>
   <li><a href="#AboutUs">About Us</a></li>
   <li><a href="#Login">Login</a></li>
@@ -31,5 +36,4 @@
 <%= image_tag("/images/Laptop.png", :alt => "Laptop", :height => "500", :width=> "659.86") %>
 </picture3>
 
-
-
+</html>
