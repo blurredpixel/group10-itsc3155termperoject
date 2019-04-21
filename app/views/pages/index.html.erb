@@ -2,18 +2,18 @@
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-	<link href="/Main_Page_Style.css" rel="stylesheet">
+	<%= stylesheet_link_tag "/Main_Page_Style.css" %>
 </head>
     
 <h1>Plan.It</h1>
 
 <picture1>
-<img src="‪‪/images/RPI.jpg" alt="Plan_It" width="40" height="60">
+    <%= image_tag("/images/RRR.jpg", :alt => "Plan.It", :height => "60", :width=> "40") %>
 </picture1>
 
 <ul>
-  <li><a class="active" href="C:\Users\Nisar\Desktop\Main_Page.html">Home</a></li>
-  <li><a href="#Notes">Notes</a></li>
+  <li><a class="active" href="/pages/index">Home</a></li>
+  <li><a href="/pages/edit_sticky">Notes</a></li>
   <li><a href="#AboutUs">About Us</a></li>
   <li><a href="#Login">Login</a></li>
 </ul>
@@ -24,11 +24,11 @@
 <button class="button"><span> Sign Up </span></button>
 
 <picture2>
-<img src="/images/Resized ScreenShot.png" alt="Plan.It" height="235" width="461.01">
+<%= image_tag("/images/Resized ScreenShot.png", :alt => "Plan.It", :height => "235", :width=> "461.0") %>
 </picture2>	
 
 <picture3>
-<img src="/images/Laptop.png" alt="Laptop" height="500" width="659.86">
+<%= image_tag("/images/Laptop.png", :alt => "Laptop", :height => "500", :width=> "659.86") %>
 </picture3>
 
 
