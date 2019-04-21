@@ -4,9 +4,11 @@ Rails.application.routes.draw do
   get 'register/index'
   post '/register/index'
   post '/users/index'
+  
   # get 'pages/index'
   root 'pages#index'
   get 'users/index'
+  get 'pages/edit_sticky'
   
   resources :settings
   resources :notes
