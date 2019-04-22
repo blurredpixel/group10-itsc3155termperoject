@@ -1,0 +1,179 @@
+
+h1 {
+  font-size: 20px;
+  font-family: 'Merienda', cursive;
+  position: fixed;
+  top: 40px; 
+  left: 160px;
+  color: Black;
+}
+
+picture1 {
+  position: fixed;
+  top: 35px;
+  left: 115px;
+}
+
+.button {
+  position: absolute;
+  left: 270px;
+  top: 450px;
+  border-radius: 4px;
+  background-color: #605DEC;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  padding: 6px;
+  width: 140px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+h2 {
+  font-size: 80px;
+  font-family: 'Quicksand', sans-serif;
+  position: absolute;
+  top: 90px;
+  left: 540px;
+  text-align: center;
+  color: grey;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: 'Quicksand', sans-serif;
+  position: absolute;
+  top: 230px; 
+  left: 700px;
+  text-align: center;
+  color: grey;
+}
+ul {
+  width: 600px;
+  position: absolute;
+  left: 900px;
+  top: 40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #000000;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 40px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #77E2F4;
+}
+
+.active {
+  background-color: #77E2F4;
+}
+
+picture2 {
+  border-radius: 50%;
+  position: absolute;
+  top: 120px; 
+  left: 200px;
+  height: 200px;
+  width: 200px;
+}
+
+picture3 {
+  position: absolute;
+  top: 200px; 
+  left: 700px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 20%;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  position: absolute;
+  top: 280px;
+  left: 130px;
+}
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 20%;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  position: absolute;
+  top: 280px;
+  left: 445px;
+}
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 20%;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  position: absolute;
+  top: 280px;
+  left: 760px;
+}
+.card3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 20%;
+  max-width: 300px;
+  min-height: 350px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  position: absolute;
+  top: 280px;
+  left: 1075px;
+}
+.title {
+  font-family: 'Merienda', cursive;
+  color: black;
+  font-size: 18px;
+}
+
+

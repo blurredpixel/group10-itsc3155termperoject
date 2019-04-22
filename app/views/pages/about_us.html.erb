@@ -1,0 +1,52 @@
+<html>
+<head>
+	<%-# font for the h1 tag -%>
+    <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Merienda" %>
+	
+	<%-# the page font and button font -%>
+	<%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Quicksand" %>
+	
+	<%-# link the CSS stylesheet to the page -%>
+	<%= stylesheet_link_tag "/about_us_Style.css" %>
+</head>
+    
+<h1>Plan.It</h1>
+
+<picture1>
+<%= image_tag("/images/RRR.jpg", :alt => "Plan.It", :height => "60", :width=> "40") %>
+</picture1>
+
+<ul>
+  <li><%= link_to 'Home', pages_index_path %></li>
+  <li><%= link_to 'Notes', pages_edit_sticky_path %></li>
+  <li><%= link_to 'About Us', pages_about_us_path %></li>
+  <li><%= link_to 'Login', users_index_path %></li>
+</ul>
+
+<h2> who we are...</h2>
+
+<div class="card">
+  <%= image_tag("/images/David.jpg", :alt => "David", :width => "100%") %>
+  <p class="title">David Fries</p>
+  <p>UNC Charlotte</p>	
+</div>
+
+<div class="card1">
+  <%= image_tag("/images/Nisarg.jpg", :alt => "Nisarg", :width => "100%") %>
+  <p class="title">Nisarg Patel</p>
+  <p>UNC Charlotte</p>	
+</div>
+<div class="card2">
+  <%= image_tag("/images/Kruti.jpg", :alt => "Kruti", :width => "100%") %>
+  <p class="title">Kruti Patel</p>
+  <p>UNC Charlotte</p>	
+</div>
+<div class="card3">
+  <%= image_tag("/images/Matt.jpg", :alt => "Matt", :width => "100%") %>
+  <p class="title">Matt Ingold</p>
+  <p>UNC Charlotte</p>	
+</div>
+
+
+
+

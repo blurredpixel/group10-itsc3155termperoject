@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'users/index'
   get 'pages/index'
   get 'pages/edit_sticky'
+  get 'pages/about_us'
   
   resources :settings
   resources :notes

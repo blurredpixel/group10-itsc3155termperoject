@@ -7,4 +7,8 @@ class PagesController < ApplicationController
     
     def edit_sticky
     end
+    
+    def about_us
+    end    
+    
 end
