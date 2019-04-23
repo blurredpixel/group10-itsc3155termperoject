@@ -6,6 +6,7 @@ class PagesController < ApplicationController
     end 
     
     def edit_sticky
+        @notes = Note.all
     end
     
     def about_us
