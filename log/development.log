@@ -13019,3 +13019,43 @@ Processing by PagesController#about_us as HTML
 Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 152.15.112.10 at 2019-04-23 18:09:15 +0000
+Cannot render console from 152.15.112.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (119.6ms)
+Completed 200 OK in 9939ms (Views: 9931.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 152.15.112.10 at 2019-04-23 18:09:25 +0000
+Cannot render console from 152.15.112.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 56ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 152.15.112.10 at 2019-04-23 18:16:22 +0000
+Cannot render console from 152.15.112.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (201.1ms)
+Completed 200 OK in 275ms (Views: 267.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 152.15.112.10 at 2019-04-23 18:16:24 +0000
+Cannot render console from 152.15.112.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 152.15.112.10 at 2019-04-23 18:16:27 +0000
+Cannot render console from 152.15.112.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
