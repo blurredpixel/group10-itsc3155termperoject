@@ -13,16 +13,14 @@
 <h1>Plan.It</h1>
 
 
-<picture1>
-<%= image_tag("/images/RRR.jpg", :alt => "Plan.It", :height => "60", :width=> "40") %>
-</picture1>
 
-<ul>
-  <li><%= link_to 'Home', pages_index_path %></li>
-  <li><%= link_to 'Notes', pages_edit_sticky_path %></li>
-  <li><%= link_to 'About Us', pages_about_us_path %></li>
-  <li><%= link_to 'Login', users_index_path %></li>
-</ul>
+<div class="topnav">
+  <picture1><%= image_tag("/images/logo123.PNG", :alt => "Plan.It", :height => "40", :width=> "40") %></picture1>    
+  <p><%= link_to 'Home', pages_index_path %></p>
+  <p class="active"><%= link_to 'Notes', pages_edit_sticky_path %></p>
+  <p><%= link_to 'About Us', pages_about_us_path %></p>
+  <p><%= link_to 'Login', users_index_path %></p>
+</div>
 
 
 <body>

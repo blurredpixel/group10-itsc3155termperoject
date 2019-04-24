@@ -5,19 +5,20 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
 h1 {
-  font-size: 20px;
-  font-family: 'Merienda', cursive;
+  font-size: 50px;
+  font-family: 'Faster One', cursive;
   position: absolute;
-  top: 40px; 
+  top: 22px; 
   left: 160px;
-  color: Black;
+  color: White;
 }
 
 picture1 {
   position: absolute;
-  top: 35px;
-  left: 115px;
+  top: 25px;
+  left: 50px;
 }
 
 .button {
@@ -81,40 +82,6 @@ h3 {
   color: grey;
 }
 
-ul {
-  width: 600px;
-  position: absolute;
-  left: 900px;
-  top: 40px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: white;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: #000000;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: bold;
-  text-align: center;
-  padding: 8px 40px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #77E2F4;
-}
-
-.active {
-  background-color: #77E2F4;
-}
-
 picture2 {
   position: absolute;
   top: 230px; 
@@ -128,4 +95,42 @@ picture3 {
   position: absolute;
   top: 200px; 
   left: 700px;
+}
+
+/* the NAV bar styling */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  position: absolute;
+  top: 25px;
+  width: 100%;
+}
+
+.topnav p {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 10px 40px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav p:hover {
+  background-color: #77E2F4;;
+  color: black;
+}
+
+.topnav p.active {
+  background-color: #605DEC;
+  color: white;
+}
+
+p {
+  margin-bottom: 0rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
 }
