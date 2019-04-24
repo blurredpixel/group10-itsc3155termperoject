@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_13_233229) do
+ActiveRecord::Schema.define(version: 2019_04_24_035615) do
 
   create_table "notes", force: :cascade do |t|
     t.integer "noteid"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2019_03_13_233229) do
     t.string "color"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "notetext"
   end
 
   create_table "settings", force: :cascade do |t|
