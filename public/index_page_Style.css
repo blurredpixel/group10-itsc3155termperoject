@@ -9,16 +9,10 @@ html {
 h1 {
   font-size: 50px;
   font-family: 'Faster One', cursive;
-  position: absolute;
-  top: 22px; 
+  position: fixed;
+  top: 16px; 
   left: 160px;
   color: White;
-}
-
-picture1 {
-  position: absolute;
-  top: 25px;
-  left: 50px;
 }
 
 .button {
@@ -101,7 +95,7 @@ picture3 {
 .topnav {
   overflow: hidden;
   background-color: black;
-  position: absolute;
+  position: fixed;
   top: 25px;
   width: 100%;
 }

@@ -6,44 +6,58 @@
   -o-background-size: cover;
   background-size: cover;
 }
-/* the title and logo */
+
 h1 {
-  font-size: 20px;
-  font-family: 'Merienda', cursive;
+  font-size: 50px;
+  font-family: 'Faster One', cursive;
   position: fixed;
-  top: 40px; 
+  top: 16px; 
   left: 160px;
-  color: Black;
+  color: White;
 }
 
-h2{
+h2 {
 	text-align: center;
 }
 
 /* the NAV bar styling */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
+  position: fixed;
+  top: 25px;
+  width: 100%;
 }
 
 .topnav p {
   float: right;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
-  padding: 8px 40px;
+  padding: 10px 40px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .topnav p:hover {
-  background-color: #ddd;
+  background-color: #77E2F4;;
   color: black;
 }
 
 .topnav p.active {
-  background-color: #4CAF50;
+  background-color: #605DEC;
   color: white;
 }
+
+p {
+  margin-bottom: 0rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+}
+
 
 
 /* "Add Item" button styling */ 
@@ -196,7 +210,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', end
  
 .editable:hover{
 	border:0px dotted gray;
-}
-picture1 {
-  margin: 0;
 }

@@ -1,7 +1,7 @@
 <html>
 <head>
   <%-# font for the h1 tag -%>
-  <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Merienda" %>
+  <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Faster+One" %>
   
   <%-# font for the sticky note content -%>    
   <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Indie+Flower" %>
@@ -9,18 +9,6 @@
   <%-# link the CSS stylesheet to the page -%>
   <%= stylesheet_link_tag "/edit_sticky_Style.css" %>
 </head>
-
-<h1>Plan.It</h1>
-
-
-
-<div class="topnav">
-  <picture1><%= image_tag("/images/logo123.PNG", :alt => "Plan.It", :height => "40", :width=> "40") %></picture1>    
-  <p><%= link_to 'Home', pages_index_path %></p>
-  <p class="active"><%= link_to 'Notes', pages_edit_sticky_path %></p>
-  <p><%= link_to 'About Us', pages_about_us_path %></p>
-  <p><%= link_to 'Login', users_index_path %></p>
-</div>
 
 
 <body>
@@ -48,6 +36,16 @@
 <% end %>
 <!-- the board, where posticks are added -->
 <div id="board"></div>
+
+<div class="topnav">
+  <p><%= link_to 'Login', users_index_path %></p>
+  <p><%= link_to 'About Us', pages_about_us_path %></p>
+  <p class="active"><%= link_to 'Notes', pages_edit_sticky_path %></p>
+  <p><%= link_to 'Home', pages_index_path %></p>
+</div>
+
+<h1>Plan.It</h1>
+
 
 <script>
 (function ($) {
