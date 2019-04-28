@@ -15,9 +15,11 @@
 
   <header>
 	<!-- id btn-addNote, button to add new sticky -->
-        <% button_to 'New Note','/notes/new'%>
+        <%= link_to 'New Note', new_note_path , class: "btn-addNote" %>
+        <%# button_to 'New Note', new_note_path %>
         <%# <input type="button" value="Add Postick" id="btn-addNote" /> %>
   </header>
+  
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
