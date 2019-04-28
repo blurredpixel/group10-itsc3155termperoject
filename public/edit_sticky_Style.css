@@ -214,8 +214,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', end
 
 .button {
   position: absolute;
-  left: 270px;
-  top: 450px;
+  left: 175px;
+  top: 120px;
   border-radius: 4px;
   background-color: #605DEC;
   border: none;
@@ -238,7 +238,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', end
 }
 
 .button span:after {
-  content: '\00bb';
+  content: ' \002B';
   position: absolute;
   opacity: 0;
   top: 0;
