@@ -3,7 +3,7 @@
 
 <div class='text-center'>
 <h1>Register New User</h1>
-<%= simple_form_for @users do |f| %>
+<%= simple_form_for :user do |f| %>
   <%= f.input :username %>
   <%= f.input :password %>
   <%= f.input :phonenumber %>

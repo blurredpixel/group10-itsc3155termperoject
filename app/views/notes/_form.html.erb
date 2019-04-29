@@ -10,33 +10,10 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :noteid %>
-    <%= form.number_field :noteid %>
-  </div>
-
-  <div class="field">
-    <%= form.label :notetitle %>
-    <%= form.text_field :notetitle %>
-  </div>
-
-  <div class="field">
-    <%= form.label :username %>
-    <%= form.text_field :username %>
-  </div>
-
-  <div class="field">
-    <%= form.label :category %>
-    <%= form.text_field :category %>
-  </div>
-
-  <div class="field">
-    <%= form.label :color %>
-    <%= form.text_field :color %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+<%= simple_form_for @note do |f| %>
+  <%= f.input :notetitle %>
+  <%= f.input :notetext %>
+  <%= f.input :username, :as => :hidden, :input_html => {:value => "demo"}%>
+  <%= f.button :submit %>
+  <% end %>
 <% end %>

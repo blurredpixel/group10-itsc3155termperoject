@@ -14,7 +14,7 @@ class UsersController < ApplicationController
 
   # GET /users/new
   def new
-    @user = User.new
+    @user = User.new(user_params)
   end
 
   # GET /users/1/edit
@@ -31,7 +31,7 @@ class UsersController < ApplicationController
         format.html { redirect_to pages_index_path, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
       else
-        format.html { render :new }
+        format.html {redirect_to pages_index_path}
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end

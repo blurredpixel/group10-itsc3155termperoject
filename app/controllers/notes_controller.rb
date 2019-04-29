@@ -14,7 +14,7 @@ class NotesController < ApplicationController
   # GET /notes
   # GET /notes.json
   def index
-    @notes = Note.all
+    @notes = Note.where(username: 'demo')
   end
 
   # GET /notes/1
@@ -34,7 +34,7 @@ class NotesController < ApplicationController
   # POST /notes
   # POST /notes.json
   def create
-    @note = Note.new(note_params)
+    @note = Note.create(note_params)
 
     respond_to do |format|
       if @note.save
@@ -80,6 +80,6 @@ class NotesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def note_params
-      params.require(:note).permit(:noteid, :notetitle, :username, :category, :color)
+      params.require(:note).permit(:noteid, :notetitle, :username, :category, :color,:notetext)
     end
 end
