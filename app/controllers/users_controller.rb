@@ -7,6 +7,12 @@ class UsersController < ApplicationController
     
   end
 
+  def register
+    respond_to do |f|
+      f.html {redirect_to pages_edit_sticky_path}
+    end
+  end
+
   # GET /users/1
   # GET /users/1.json
   def show
