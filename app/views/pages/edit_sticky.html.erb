@@ -31,20 +31,22 @@
 <body>  
 
 <!-- class postick, the physical square component -->
+
+<!-- the board, where posticks are added -->
+<div id="board">
+
+</div>
 <% @notes.each do |note| %>
 <div class = "row">
 	<div class="postick">
 	  <div class="toolbar"><span class="delete" title="Close">x</span></div>
 		  <div class ="editable-title-field">
-			<input type="text" placeholder="Title" class="list-name" value=<% note.title %>>
+			<input type="text" placeholder="Title" class="list-name" value=<%= note.notetitle %>>
 		  </div>
-	  <div contenteditable class="editable"><ol id="myP"><li><% note.text %></li></ol></div>
+	  <div contenteditable class="editable"><ol id="myP"><li><%= note.notetext %></li></ol></div>
 	</div>
 </div>
 <% end %>
-<!-- the board, where posticks are added -->
-<div id="board"></div>
-
 <div class="topnav">
   <p><%= link_to 'Login', users_index_path %></p>
   <p><%= link_to 'About Us', pages_about_us_path %></p>
