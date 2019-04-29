@@ -1,6 +1,16 @@
 class NotesController < ApplicationController
   before_action :set_note, only: [:show, :edit, :update, :destroy]
 
+
+  def sendText
+    client = Twilio::REST::Client.new
+    client.messages.create({
+      from: '+17042284863',
+      to: '+17044336315',
+      body: 'This can say whatever you want it to'
+    })
+  end
+  
   # GET /notes
   # GET /notes.json
   def index
@@ -28,6 +38,7 @@ class NotesController < ApplicationController
 
     respond_to do |format|
       if @note.save
+        sendText
         format.html { redirect_to @note, notice: 'Note was successfully created.' }
         format.json { render :show, status: :created, location: @note }
       else
