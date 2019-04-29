@@ -8,7 +8,9 @@
 	
   <%-# font for the sticky note content -%>    
   <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Indie+Flower" %>
-  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
   <%-# link the CSS stylesheet to the page -%>
   <%= stylesheet_link_tag "/edit_sticky_Style.css" %>
 </head>
@@ -33,20 +35,8 @@
 <!-- class postick, the physical square component -->
 
 <!-- the board, where posticks are added -->
-<div id="board">
 
-</div>
-<% @notes.each do |note| %>
-<div class = "row">
-	<div class="postick">
-	  <div class="toolbar"><span class="delete" title="Close">x</span></div>
-		  <div class ="editable-title-field">
-			<input type="text" placeholder="Title" class="list-name" value=<%= note.notetitle %>>
-		  </div>
-	  <div contenteditable class="editable"><ol id="myP"><li><%= note.notetext %></li></ol></div>
-	</div>
-</div>
-<% end %>
+
 <div class="topnav">
   <p><%= link_to 'Login', users_index_path %></p>
   <p><%= link_to 'About Us', pages_about_us_path %></p>
@@ -56,29 +46,44 @@
 
 <h1>Plan.It</h1>
 
-
+<div class="container">
+<% @notes.each do |note| %>
+<div class = "row">
+<div class="col-sm">
+	<div class="postick">
+	  <div class="toolbar"><span class="delete" title="Close">x</span></div>
+		  <div class ="editable-title-field">
+			<input type="text" placeholder="Title" class="list-name" value=<%= note.notetitle %>>
+		  </div>
+	  <div contenteditable class="editable"><ol id="myP"><li><%= note.notetext %></li></ol></div>
+	</div>
+  
+</div>
+</div>
+<% end %>
+</div>
 <script>
 (function ($) {
 
     //Variables Declaration
     var $board = $('#board'),
     //Board where the Posticks are sticked
-    currentNotes = ''; //Storage the html construction of the posticks
+  //   currentNotes = ''; //Storage the html construction of the posticks
 
-	//Each postick is saved in the localStorage as an Object  
-    Postick = {
-        add: function (obj) {
-        },
-        remove: function (id) {
-        },
-        removeAll: function () {
-        }
+	// //Each postick is saved in the localStorage as an Object  
+  //   Postick = {
+  //       add: function (obj) {
+  //       },
+  //       remove: function (id) {
+  //       },
+  //       removeAll: function () {
+  //       }
  
-    };
+  //   };
 	
  
-	//Append all the posticks to the board
-    $board.html(currentNotes);
+	// //Append all the posticks to the board
+  //   $board.html(currentNotes);
 
     //Remove Postick
     $('span.delete').live('click', function () {

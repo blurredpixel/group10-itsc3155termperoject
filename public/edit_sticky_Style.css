@@ -254,3 +254,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', end
   opacity: 1;
   right: 0;
 }
+
+#board {
+  display: block;
+}
