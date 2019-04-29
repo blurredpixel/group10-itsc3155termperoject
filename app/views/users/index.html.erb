@@ -2,12 +2,17 @@
 
 
 <div class='text-center'>
-<h1>Register New User</h1>
-<%= simple_form_for :user do |f| %>
-  <%= f.input :username %>
-  <%= f.input :password %>
-  <%= f.input :phonenumber %>
-  
-  <%= f.button :submit %>
-<% end %>
+<h1>Login</h1>
+
+<form method="GET" action="/pages/edit_sticky">
+<label for="userid"></label>
+          <input type="text"
+            class="form-control" name="userid" id="userid" aria-describedby="helpId" placeholder="Enter UserID">
+            <input type="password"
+            class="form-control" name="password" id="password" aria-describedby="helpId" placeholder="Enter Password">
+
+
+<button type="submit" class="btn custbtn-drk">Login</button>
+</form>
+
 </div>

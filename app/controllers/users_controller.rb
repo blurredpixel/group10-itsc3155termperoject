@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    
   end
 
   # GET /users/1
@@ -14,7 +14,7 @@ class UsersController < ApplicationController
 
   # GET /users/new
   def new
-    @user = User.new(user_params)
+    redirect_to pages_edit_sticky_path
   end
 
   # GET /users/1/edit
@@ -24,17 +24,19 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    @user = User.new(user_params)
+    # @user = User.new(user_params)
 
     respond_to do |format|
-      if @user.save
-        format.html { redirect_to pages_index_path, notice: 'User was successfully created.' }
-        format.json { render :show, status: :created, location: @user }
-      else
-        format.html {redirect_to pages_index_path}
-        format.json { render json: @user.errors, status: :unprocessable_entity }
-      end
+    #   if @user.save
+    #     format.html { redirect_to pages_edit_sticky_path, notice: 'User was successfully created.' }
+    #     format.json { render :show, status: :created, location: @user }
+    #   else
+    #     format.html {redirect_to pages_edit_sticky_path}
+    #     format.json { render json: @user.errors, status: :unprocessable_entity }
+    #   end
+      format.html {redirect_to pages_edit_sticky_path}
     end
+    redirect_to pages_edit_sticky_path
   end
 
   # PATCH/PUT /users/1
