@@ -2,12 +2,12 @@ class NotesController < ApplicationController
   before_action :set_note, only: [:show, :edit, :update, :destroy]
 
 
-  def sendText
+  def sendText(message)
     client = Twilio::REST::Client.new
     client.messages.create({
       from: '+17042284863',
-      to: '+17044336315',
-      body: 'This can say whatever you want it to'
+      to: '+17047782016',
+      body: message
     })
   end
   
@@ -38,7 +38,7 @@ class NotesController < ApplicationController
 
     respond_to do |format|
       if @note.save
-        sendText
+        sendText(@note.notetext)
         format.html { redirect_to pages_edit_sticky_path  }
         format.json { render :show, status: :created, location: @note }
       else
