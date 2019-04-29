@@ -46,50 +46,49 @@
 
 <h1>Plan.It</h1>
 
-<div class="container">
+
 <% @notes.each do |note| %>
-<div class = "row">
-<div class="col-sm">
-	<div class="postick">
-	  <div class="toolbar"><span class="delete" title="Close">x</span></div>
-		  <div class ="editable-title-field">
-			<input type="text" placeholder="Title" class="list-name" value=<%= note.notetitle %>>
-		  </div>
-	  <div contenteditable class="editable"><ol id="myP"><li><%= note.notetext %></li></ol></div>
-	</div>
-  
-</div>
-</div>
+
+    <div class="postick">
+    	  <div class="toolbar"><span class="delete" title="Close">x</span></div>
+    		  <div class ="editable-title-field">
+    			<input type="text" placeholder="Title" class="list-name" value=<%= note.notetitle %>>
+    		  </div>
+    	  <div contenteditable class="editable"><ol id="myP"><li><%= note.notetext %></li></ol></div>
+    </div>
+
 <% end %>
-</div>
+
+<!-- the board, where posticks are added -->
+<div id="board"></div>
+
 <script>
 (function ($) {
-
     //Variables Declaration
     var $board = $('#board'),
     //Board where the Posticks are sticked
-  //   currentNotes = ''; //Storage the html construction of the posticks
+    currentNotes = ''; //Storage the html construction of the posticks
 
-	// //Each postick is saved in the localStorage as an Object  
-  //   Postick = {
-  //       add: function (obj) {
-  //       },
-  //       remove: function (id) {
-  //       },
-  //       removeAll: function () {
-  //       }
+	//Each postick is saved in the localStorage as an Object  
+    Postick = {
+        add: function (obj) {
+        },
+        remove: function (id) {
+        },
+        removeAll: function () {
+        }
  
-  //   };
+    };
 	
  
-	// //Append all the posticks to the board
-  //   $board.html(currentNotes);
+	//Append all the posticks to the board
+    $board.html(currentNotes);
 
     //Remove Postick
     $('span.delete').live('click', function () {
         if (confirm('Are you sure you want to delete this Note?')) {
             var $this = $(this);
-            $('postick').fadeOut('slow', function () {
+            $this.closest('.postick').fadeOut('slow', function () {
                 $(this).remove();
             });
         }
@@ -99,7 +98,7 @@
     $('#btn-addNote').click(function () {
         $board.append('<div class="postick"><div class="toolbar"><span class="delete" title="Close">x</span></div><div class ="editable-title-field"><input type="text" placeholder="Title" class="list-name"></div><div contenteditable class="editable" placeholder="hello"><ol id="myP"><li></li></ol></div></div>');
     });
- 
+    
 })(jQuery); 
 </script>
 </body>
